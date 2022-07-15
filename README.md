@@ -1,7 +1,7 @@
 # graphqlapi
 
 Create these tables in Postgresql
-[5/26/2022 2:55 PM] Reddeppagari, Prabhanjan (623)
+
 CREATE TABLE IF NOT EXISTS warp_user_profile
 (
 user_id VARCHAR(10) NOT NULL PRIMARY KEY,
@@ -42,7 +42,6 @@ status BOOLEAN NOT NULL DEFAULT true,
 updated_on Timestamptz DEFAULT NOW(),
 created_on Timestamptz DEFAULT NOW(),PRIMARY KEY (user_id, project_id, role_name));
 
-[5/26/2022 2:56 PM] Reddeppagari, Prabhanjan (623)
 CREATE SCHEMA IF NOT EXISTS public;
 
 -- Create a sequence project_id_seq , which start from 10001
